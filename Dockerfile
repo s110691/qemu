@@ -69,9 +69,9 @@ ADD --chmod=755 "https://github.com/qemus/fiano/releases/download/v${VERSION_UTK
 VOLUME /storage
 EXPOSE 22 5900 8006
 
-ENV BOOT="alpine"
+ENV BOOT="https://mirrors.cicku.me/linuxmint/iso/stable/22.2/linuxmint-22.2-cinnamon-64bit.iso"
 ENV CPU_CORES="2"
-ENV RAM_SIZE="2G"
+ENV RAM_SIZE="6G"
 ENV DISK_SIZE="64G"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
