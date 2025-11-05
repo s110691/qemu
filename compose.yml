@@ -3,7 +3,7 @@ services:
     image: qemux/qemu
     container_name: qemu
     environment:
-      BOOT: "mint"
+      BOOT: "https://mirrors.cicku.me/linuxmint/iso/stable/22.2/linuxmint-22.2-cinnamon-64bit.iso"
     devices:
       - /dev/kvm
       - /dev/net/tun
